@@ -1,8 +1,11 @@
 import './Post.css'
 import {MoreVert} from '@mui/icons-material'
+import {Users} from "../../dummyData"
 
+function Post({Post}) {
+  const user=Users.filter(u =>u.id===1)
+  console.log(user[0].username)
 
-function Post() {
   return (
     <div className='post'>
         <div className="postWrapper">
